@@ -1,40 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dynamic Shape Creator</title>
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <title>Shapes</title>
+    <script type="text/javascript" src="draw.js"></script>
+    <link rel="stylesheet" href="shapes.css">
 </head>
 <body>
-  <main class="wrap">
-    <h1>Dynamic Shape Creator</h1>
+    <div id="container" class="abs">
+    </div>
 
-    <form id="controls" class="controls" aria-describedby="hint">
-      <label>
-        Shape
-        <select id="shape">
-          <option value="circle">Circle</option>
-          <option value="square">Square</option>
-          <option value="triangle">Triangle</option>
-        </select>
-      </label>
-      <label>
-        Size (px)
-        <input id="size" type="number" min="10" max="300" value="100" />
-      </label>
-      <label>
-        Color
-        <input id="color" type="color" value="#38bdf8" />
-      </label>
-      <button id="add" type="button" class="btn">Add shape</button>
-    </form>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
 
-    <p id="hint" class="hint">Use Tab to reach controls. Click a shape to remove it.</p>
 
-    <section id="stage" class="stage" aria-label="Canvas area"></section>
-  </main>
+    <div id = "btns" onclick="initDraw()">
+        <form>
+            <input type="radio" id = "r" name="option" value="random"> Random <br>
+            <input type="radio" id = "s" name="option" value="squares"> Squares <br>
+            <input type="radio" id = "c" name="option" value="circles"> Circles <br>
+        </form>
+    </div>
 
-  <script src="./script.js" defer></script>
+    <button type="button" onclick="initDraw()"> Generate more 
+
+</body>
 </body>
 </html>
